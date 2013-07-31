@@ -19,6 +19,9 @@
 //
 
 #include"TFIM.h"
+#include"Calculate.h"
+#include"Sequence.h"
+#include"GRN.h"
 #include"Regulation.h"
 #include"EasytoDebug.h"
 
@@ -107,6 +110,8 @@ void TFIM::getGeneInformation(FILE *fp)
 			rightPosition=p;
 			p=strtok(NULL,delims);
 			p=strtok(NULL,delims);
+			if(*p!='-')RNA=1;
+			else RNA=0;
 			p=strtok(NULL,delims);
 			p=strtok(NULL,delims);
 			p=strtok(NULL,delims);
@@ -166,4 +171,10 @@ int TFIM::getFileError()
 char *TFIM::getGeneName()
 {
 	return geneName;
+}
+
+int TFIM::getRNA()
+{
+	cout<<RNA<<endl;
+	return RNA;
 }

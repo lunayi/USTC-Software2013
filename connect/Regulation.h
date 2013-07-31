@@ -8,7 +8,7 @@ public:
 	int getGeneAmount();
 	void fullFill();
 	int getOpenError();
-	float originalMatrix[N][N];;//0:no regulation 1:+active -1:-negative 2:NULL 0.5:+ -
+	double originalMatrix[N][N];;//0:no regulation 1:+active -1:-negative 2:NULL 0.5:+ -
 private:
 	int geneAmount;
 	int openFileError;
