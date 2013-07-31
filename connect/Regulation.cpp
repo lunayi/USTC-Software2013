@@ -18,10 +18,12 @@
 //A to B 's regulation is originalMatrix[B][A]
 
 
-
 #include"TFIM.h"
+#include"Calculate.h"
 #include"Regulation.h"
 #include"EasytoDebug.h"
+#include"Sequence.h"
+#include"GRN.h"
 
 
 //input:objexts of TFIM, read name and also get regulation, if file is not open int openFileError will be 1
